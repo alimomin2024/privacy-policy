@@ -1,6 +1,6 @@
 # Privacy Policy - Crosvix
 
-**Effective Date:** July 28, 2026
+**Effective Date:** July 29, 2026
 
 This Privacy Policy explains how Crosvix ("the app") handles information when you use the game.
 
