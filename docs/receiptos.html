@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ReceiptOS: AI Expense Tracker</title>
+  <style>
+    :root {
+      --primary: #2563EB;
+      --primary-dark: #1D4ED8;
+      --bg: #0B1329;
+      --surface: #1E293B;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border: #334155;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px 32px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+    }
+    .logo-badge {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #2563EB, #3B82F6);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .meta {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    h2 {
+      font-size: 19px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      color: #60A5FA;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 6px;
+    }
+    p, ul {
+      margin-bottom: 16px;
+      color: #CBD5E1;
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: var(--text);
+    }
+    .highlight-card {
+      background: rgba(37, 99, 235, 0.1);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .highlight-card p {
+      margin: 0;
+      color: #E2E8F0;
+    }
+    a {
+      color: #60A5FA;
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-badge">🧾</div>
+      <div>
+        <h1>Privacy Policy</h1>
+        <div class="meta">ReceiptOS: AI Expense Tracker (Package: <code>com.receiptos.app.receipt_os</code>)</div>
+        <div class="meta">Effective Date: September 27, 2026 • Last Updated: September 27, 2026</div>
+      </div>
+    </div>
+
+    <div class="highlight-card">
+      <p><strong>Core Privacy Commitment:</strong> ReceiptOS is designed with a <strong>local-first, privacy-centric architecture</strong>. By default, your receipts, financial records, expense categories, and reports are stored locally on your device in encrypted storage. We do not sell, rent, or monetize your personal financial data.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how <strong>Weyond</strong> ("we", "our", or "us") collects, uses, and safeguards your information when you use the <strong>ReceiptOS: AI Expense Tracker</strong> mobile application ("App").</p>
+
+    <h2>2. Information We Access and Process</h2>
+    <p>ReceiptOS requests only the permissions strictly required to provide expense tracking, receipt capture, and financial reporting:</p>
+    <ul>
+      <li><strong>Camera & Photo Gallery:</strong> Used exclusively when you choose to snap a picture of a paper receipt or select an invoice image from your photo gallery. Image processing is performed directly on your device via on-device machine learning (ML Kit OCR) by default.</li>
+      <li><strong>Local Encrypted Storage:</strong> Your expense entries, merchant names, tax amounts, currency selections, and receipt metadata are stored securely on your device using encrypted storage.</li>
+      <li><strong>Biometric Authentication (<code>USE_BIOMETRIC</code>):</strong> If you enable App Lock in Settings, biometric verification (fingerprint or face unlock) is handled securely by the Android OS system prompt. Your biometric data never leaves your device's secure hardware enclave.</li>
+      <li><strong>Internet Access (<code>INTERNET</code>):</strong> Used only if you choose to enable cloud backup/sync (via Firebase Authentication) or send diagnostics/crash logs via Sentry.</li>
+    </ul>
+
+    <h2>3. Artificial Intelligence & Receipt Extraction</h2>
+    <p>ReceiptOS converts receipt images into structured ledger entries:</p>
+    <ul>
+      <li><strong>On-Device Extraction:</strong> Text recognition and field parsing (merchant, date, total, tax) operate locally on your phone using Google ML Kit.</li>
+      <li><strong>Optional Advanced AI:</strong> If enabled, high-precision vision extraction parses complex multi-item invoices. Receipt data sent for parsing is processed ephemerally and is never used to train public commercial AI models.</li>
+    </ul>
+
+    <h2>4. Data Sharing and Third Parties</h2>
+    <ul>
+      <li><strong>No Advertising SDKs:</strong> ReceiptOS contains zero advertising networks and does not track you across other applications.</li>
+      <li><strong>No Sale of Data:</strong> We never sell, rent, or trade your receipt images, business financial data, or expense habits to advertisers or data brokers.</li>
+      <li><strong>Service Providers:</strong> If enabled by user configuration, Firebase (Google LLC) provides secure authentication and database sync, and Sentry provides anonymized crash reporting.</li>
+    </ul>
+
+    <h2>5. Data Retention, Portability & Deletion</h2>
+    <ul>
+      <li><strong>Data Portability:</strong> You can export your complete expense records and receipts at any time in industry-standard formats: <strong>CSV, PDF, XLSX, and ZIP backup</strong>.</li>
+      <li><strong>User-Controlled Deletion:</strong> You can delete individual receipts, expenses, or wipe all local application records directly from the App Settings.</li>
+    </ul>
+
+    <h2>6. Security</h2>
+    <p>We enforce modern mobile security practices including encrypted at-rest storage and transport-layer encryption (TLS/HTTPS) for all network communications.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>ReceiptOS is a business and personal productivity tool intended for general audiences and is not directed at children under the age of 13.</p>
+
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update this policy periodically. Any changes will be published on this page with a refreshed effective date.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions or feedback regarding this Privacy Policy or your data protection, please contact us at:</p>
+    <ul>
+      <li><strong>Developer:</strong> Weyond / Ali Momin</li>
+      <li><strong>Email:</strong> <a href="mailto:idev.query@gmail.com">idev.query@gmail.com</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/alimomin2024/privacy-policy" target="_blank" rel="noopener">https://github.com/alimomin2024/privacy-policy</a></li>
+    </ul>
+
+    <div class="footer">
+      © 2026 Weyond. All rights reserved. • ReceiptOS: AI Expense Tracker
+    </div>
+  </div>
+</body>
+</html>
